@@ -1,5 +1,5 @@
-# NewsFeed-API-Client
-A RESTful API Client application which can fetch and filter news based on several components (category, country, source, keywords)
+# NewsFeed-API-Client (Homework for MJT Course at FMI)
+A RESTful API Client application which can fetch and filter news based on several components (category, country, source, keywords).
 * Uses https://newsapi.org/ to gather data
 * JSON parsing with gson (google JSON library for Java)
 * Implements a builder design pattern approach
