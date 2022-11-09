@@ -3,4 +3,4 @@ A RESTful API Client application which can fetch and filter news based on severa
 * Uses https://newsapi.org/ to gather data
 * JSON parsing with gson (google JSON library for Java)
 * Implements a builder design pattern approach
-* Tests written with JUnit5
+* Tests written with JUnit5 and Mockito
