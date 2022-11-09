@@ -51,16 +51,17 @@ public class NewsFeedClient {
         Type type = new TypeToken<List<Article>>() {
         }.getType();
  
-        int page = 0, totalResults = 0;
+        int page = 0;
+        int totalResults = 0;
         int pageSizeLimit = query.getPageSize() == 0 ? LIMIT_PER_PAGE : query.getPageSize();
  
-        String URL = API_URL + API_ENDPOINT_PATH + query.getQueryEndpoint();
+        String url = API_URL + API_ENDPOINT_PATH + query.getQueryEndpoint();
  
         do {
             ++page;
  
             try {
-                URI uri = URI.create(URL + API_ENDPOINT_PAGER.formatted(pageSizeLimit, page) +
+                URI uri = URI.create(url + API_ENDPOINT_PAGER.formatted(pageSizeLimit, page) +
                         API_ENDPOINT_API_KEY.formatted(apiKey));
  
                 HttpRequest request = HttpRequest.newBuilder().uri(uri).build();
